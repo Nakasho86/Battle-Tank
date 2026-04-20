@@ -74,6 +74,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: d1e53f13e3243784e865dbbe10c2014d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8408058523814328551}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: d1e53f13e3243784e865dbbe10c2014d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 784163877772071608}
   m_SourcePrefab: {fileID: 100100000, guid: d1e53f13e3243784e865dbbe10c2014d, type: 3}
 --- !u!1 &6346108922145853861 stripped
 GameObject:
@@ -130,3 +133,16 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &784163877772071608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346108922145853861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2faebd6a3d9186b41a4c01bb8d343e9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyShell
+  effectPrefab: {fileID: 100002, guid: d9ee3bc9832154740a632e73487486f5, type: 3}
