@@ -458,6 +458,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485289772}
   - component: {fileID: 485289773}
+  - component: {fileID: 485289774}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -498,6 +499,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TankMonvement
   movespeed: 5
   turnspeed: 50
+--- !u!114 &485289774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485289771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 046c89391de5ed1499281655f643b49b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShotShell
+  shellPrefab: {fileID: 6346108922145853861, guid: 0515ef5f65d5cd14b9630096d13c6d48, type: 3}
+  shellPrefab2: {fileID: 4138261091501182960, guid: 316143ad6823fda4b85890ce91b47877, type: 3}
+  shotSound: {fileID: 8300000, guid: 98ee43f119dde354a9d69cbe815e5a98, type: 3}
+  shotSpeed: 500
+  shotPoint: {fileID: 1844231499}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +906,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1844231500}
-  - component: {fileID: 1844231501}
   m_Layer: 0
   m_Name: ShotPoint
   m_TagString: Untagged
@@ -911,22 +928,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 485289772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1844231501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844231499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 046c89391de5ed1499281655f643b49b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShotShell
-  shellPrefab: {fileID: 6346108922145853861, guid: 0515ef5f65d5cd14b9630096d13c6d48, type: 3}
-  shotSound: {fileID: 8300000, guid: 98ee43f119dde354a9d69cbe815e5a98, type: 3}
-  shotSpeed: 500
-  shotPoint: {fileID: 255696890}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
