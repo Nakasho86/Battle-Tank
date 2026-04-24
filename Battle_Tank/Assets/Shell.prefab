@@ -145,4 +145,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2faebd6a3d9186b41a4c01bb8d343e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyShell
-  effectPrefab: {fileID: 100002, guid: d9ee3bc9832154740a632e73487486f5, type: 3}
+  effectPrefab: {fileID: 100000, guid: c4ad8e246bd84f54bbd36b24f9988314, type: 3}
