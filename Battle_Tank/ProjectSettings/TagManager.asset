@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Undefined
   - Shell
   - Shell2
+  - EnemyShell
   layers:
   - Default
   - TransparentFX
@@ -16,12 +18,12 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 9 Wheel
+  - 10 Reinforce
+  - 11 MainBody
+  - 12 Bullet
+  - 13 Armor Collider
+  - 14 Extra Collider
   - 
   - 
   - 
