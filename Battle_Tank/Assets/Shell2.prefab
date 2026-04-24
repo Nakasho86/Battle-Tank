@@ -10,7 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: d1e53f13e3243784e865dbbe10c2014d, type: 3}
       propertyPath: m_Name
-      value: Shell_II
+      value: Shell2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d1e53f13e3243784e865dbbe10c2014d, type: 3}
+      propertyPath: m_TagString
+      value: Shell2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d1e53f13e3243784e865dbbe10c2014d, type: 3}
       propertyPath: m_LocalScale.x
