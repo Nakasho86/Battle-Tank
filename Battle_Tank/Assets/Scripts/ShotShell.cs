@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class ShotShell : MonoBehaviour
 {
@@ -12,12 +13,17 @@ public class ShotShell : MonoBehaviour
     public GameObject shotPoint;
     private float shotPower;
 
+    public int shellCount;
+    public TextMeshProUGUI shellLabel;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //インプットシステム
         isa = new InputSystem_Actions();
         isa.Enable();
+
+        shellLabel.text = "" + shellCount;
     }
 
     // Update is called once per frame
@@ -27,6 +33,13 @@ public class ShotShell : MonoBehaviour
         //「shot」に定義されたボタンを押したとき(条件)
         if (isa.Player.Shot.triggered)
         {
+            if (shellCount < 1)
+            {
+                return;
+            }
+
+            shellCount -= 1;
+            shellLabel.text = "" + shellCount;
             GameObject shell = Instantiate(shellPrefab, shotPoint.transform.position, Quaternion.identity);
             Rigidbody shellRb = shell.GetComponent<Rigidbody>();
             shellRb.AddForce(transform.forward * shotSpeed);
