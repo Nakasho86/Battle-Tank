@@ -16,6 +16,10 @@ public class ShotShell : MonoBehaviour
     public int shellCount;
     public TextMeshProUGUI shellLabel;
 
+    public int maxShell = 20;
+    public AudioClip itemSound;
+    //public GameObject effectPrefab;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -72,6 +76,35 @@ public class ShotShell : MonoBehaviour
 
             //パワーリセット
             shotPower = 0;
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("ShellItem"))
+        {
+            //アイテムを消す
+            Destroy(other.gameObject);
+
+            //効果音を消す
+            AudioSource.PlayClipAtPoint(itemSound, transform.position);
+
+            //エフェクトを出す
+            //GameObject effect = Instantiate(effectPrefab,other.transform.position,Quaternion.identity);
+
+            //エフェクトを消す
+            //Destroy(effect, 1.0f);
+
+            //Shellを「５」回復させる
+            shellCount += 5;
+            shellLabel.text = "" + shellCount;
+
+            //弾数が最大値を超えないように制限する
+            if (shellCount > maxShell)
+            {
+                shellCount = maxShell;
+                shellLabel.text = "" + shellCount;
+            }
         }
     }
 

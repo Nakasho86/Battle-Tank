@@ -9,6 +9,7 @@ TagManager:
   - Shell2
   - EnemyShell
   - HPItem
+  - ShellItem
   layers:
   - Default
   - TransparentFX

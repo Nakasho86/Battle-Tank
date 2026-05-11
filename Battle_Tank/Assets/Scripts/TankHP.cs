@@ -9,7 +9,7 @@ public class TankHP : MonoBehaviour
 
     public int maxHP = 8; //最大HP
     public AudioClip itemSound;
-    public GameObject effectPrefab;
+    //public GameObject effectPrefab;
 
     void Start()
     {
@@ -41,8 +41,11 @@ public class TankHP : MonoBehaviour
             //効果音を出す
             AudioSource.PlayClipAtPoint(itemSound,transform.position);
 
+            // エフェクトを出す
+            //GameObject effect = Instantiate(effectPrefab, other.transform.position, Quaternion.identity);
+
             //エフェクトを消す
-            Destroy(effectPrefab, 1.0f);
+            //Destroy(effectPrefab, 1.0f);
 
             //HPを「２」回復させる
             HP += 2;
